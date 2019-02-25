@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Layout_Lecture_04</string>
+    <string name="LeftBtnID">Left</string>
+    <string name="RightBtnID">Right</string>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        tools:context=".MainActivity2" android:orientation="vertical">
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Random Number Generator"
+              android:textAlignment="center"
+              android:textSize="20sp"
+              android:textStyle="bold"
+              android:textColor="#000000"
+              android:layout_marginTop="10dp"
+              android:layout_gravity="center"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="Hello Students...!! Let's Develop random number generator as practice"
+              android:textSize="15sp"
+              android:textStyle="normal"
+              android:textColor="#000000"
+              android:layout_marginTop="10dp"
+              android:layout_gravity="left|fill_horizontal"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:layout_marginTop="200dp"
+                  android:layout_gravity="center">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/left_click"
+                android:text="@string/LeftBtnID"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_gravity="center|left"
+                android:onClick="leftBtnClickFun"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_weight="3"/>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/right_click"
+                android:text="@string/RightBtnID"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:layout_gravity="center|right" android:onClick="rightBtnClickFun"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/points"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:text="Points: 0"
+              android:textSize="20sp"
+              android:textStyle="bold"
+              android:textColor="#000000"
+              android:layout_marginTop="150dp"
+              />
+</LinearLayout>

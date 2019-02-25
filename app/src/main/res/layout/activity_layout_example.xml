@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  tools:context=".LayoutExample2"
+                  android:orientation="vertical"
+                  android:background="#FFDDEE">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Ninja Team"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+        />
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name: "
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:textStyle="bold"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Name"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:id="@+id/UserName"
+                        android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Code:  "
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:padding="10dp"
+                        android:textStyle="bold"/>
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Password"
+                        android:inputType="textPassword"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:id="@+id/UserPwd"
+                        android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+            <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="None"
+                        android:id="@+id/none_rb"
+                        android:onClick="tmntSelectionFunction"/>
+
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Don"
+                        android:id="@+id/don_rb"
+                        android:onClick="tmntSelectionFunction"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Leo"
+                        android:id="@+id/leo_rb"
+                        android:onClick="tmntSelectionFunction"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Mike"
+                        android:id="@+id/mike_rb"
+                        android:onClick="tmntSelectionFunction"/>
+                <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Raph"
+                        android:id="@+id/raph_rb"
+                        android:onClick="tmntSelectionFunction"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tmntdon"
+                android:id="@+id/display_tmnt_character"/>
+
+        <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/rate_tmnt"
+                android:stepSize="0.5"
+                android:rating="2.5"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Press OK"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:onClick="okButtonPressed"/>
+    </LinearLayout>
+</ScrollView>
